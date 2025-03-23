@@ -1,7 +1,5 @@
 ## Pokedex
 #### Description
-This angular SPA consumes the PokeAPI (https://pokeapi.co/) allowing users to build a 6-member Pokemon team, and quickly look up info about the team members. Initially presented with 6 blank slots for teammates, users will select Pokemon to fill those slots. There is a view for the whole team, and clicking any of the pokemon will navigate to a details page with up-to-date information retrieved from the API.
-
 This angular SPA consumes the PokeAPI (https://pokeapi.co/) allowing users view and search for all pokemon, and quickly get more detailed info about each one. Initially presented with a grid of panels for all pokemon sprites/names, users can filter by name to narrow down the list. Clicking on a panel will navigate to a details page with up-to-date information retrieved from the API.
 
 
