@@ -1,3 +1,20 @@
+## Pokedex
+#### Description
+This angular SPA consumes the PokeAPI (https://pokeapi.co/) allowing users to build a 6-member Pokemon team, and quickly look up info about the team members. Initially presented with 6 blank slots for teammates, users will select Pokemon to fill those slots. There is a view for the whole team, and clicking any of the pokemon will navigate to a details page with up-to-date information retrieved from the API.
+
+This angular SPA consumes the PokeAPI (https://pokeapi.co/) allowing users view and search for all pokemon, and quickly get more detailed info about each one. Initially presented with a grid of panels for all pokemon sprites/names, users can filter by name to narrow down the list. Clicking on a panel will navigate to a details page with up-to-date information retrieved from the API.
+
+
+#### Concepts
+ - SPA Route Navigation - when clicking on a pokemon in the list view, route to the individual detail view. There is also be a link to route back to the team view.
+ - Consume a RESTful API - fetch up-to-date information on demand from the pokeAPI
+ - User Interaction - allow users to filter pokemon by name in the list view by typing into a text input
+ - Multiple Components - There are at minimum 2 components here:
+   - pokemon list view
+   - pokemon details
+
+<br>
+
 # AngularMiniProject
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
@@ -11,49 +28,3 @@ ng serve
 ```
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

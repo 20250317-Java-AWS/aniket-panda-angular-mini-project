@@ -1,0 +1,9 @@
+<div>
+    <h2>Welcome to the Pokédex!</h2>
+    <input type="text" (input)="onFilterChange($event)" placeholder="filter by name">
+</div>
+<hr>
+<div class="pokelist">
+    <app-pokemon class="pokemon" *ngFor="let pokemon of pokeResults.results" 
+    [pokemon]="pokemon" [routerLink]="['/details', pokemon.name]"></app-pokemon>
+</div>

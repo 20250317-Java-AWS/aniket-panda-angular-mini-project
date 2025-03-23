@@ -1,0 +1,40 @@
+<div class="pokemon-panel">
+	<div class="pokemon-image">
+		<img [src]="pokemon.sprites.front_default" alt="{{pokemon.name}}">
+	</div>
+	
+	<div class="pokemon-info">
+		<h2>{{pokemon.name}}</h2>
+		
+		<p><strong>ID:</strong> {{pokemon.id}}</p>
+		
+		<p><strong>Height:</strong> {{pokemon.height * 10}} cm</p>
+		
+		<p><strong>Weight:</strong> {{pokemon.weight / 10}} kg</p>
+		
+		<p>
+			<strong>Types:</strong>
+			<span class="pokemon-types">
+				<span *ngFor="let typeObj of pokemon.types" 
+					class="type-badge type-{{typeObj.type.name}}">
+					{{typeObj.type.name}}
+				</span>
+			</span>
+		</p>
+		
+		<p>
+			<strong>Abilities:</strong>
+			<span class="pokemon-abilities">
+				<span *ngFor="let abilityObj of pokemon.abilities; let isLast = last">
+					{{abilityObj.ability.name}}{{!isLast ? ', ' : ''}}
+				</span>
+			</span>
+		</p>
+	</div>
+</div>
+
+<button class="back-button" routerLink="/">
+	&#8592; Back to Pokémon List
+</button>
+
+<router-outlet />

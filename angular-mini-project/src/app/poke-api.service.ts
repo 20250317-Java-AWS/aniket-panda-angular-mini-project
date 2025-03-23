@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PokeApiService{
   client: HttpClient;
   constructor(client: HttpClient) { 
@@ -29,16 +30,21 @@ export class Pokemon {
   id: number = 0
   name: string = ""
   height: number = 0
-  stats: Stat[] = []
+  weight: number = 0
   url: string = ""
   sprites: Sprites = new Sprites(); 
+  types: Type[] = []
+  abilities: Ability[] = []
 }
 
 export class Sprites {
   front_default: string = "";
 }
 
-export class Stat {
-  base_stat: string = ""
-  stat: {name: string} = {name: ""}
+export class Type {
+  type: {name: string} = {name: ""}
+}
+
+export class Ability {
+  ability: {name: string} = {name: ""}
 }
