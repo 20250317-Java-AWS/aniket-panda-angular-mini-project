@@ -4,7 +4,7 @@ This angular SPA consumes the PokeAPI (https://pokeapi.co/) allowing users view 
 
 
 #### Concepts
- - SPA Route Navigation - when clicking on a pokemon in the list view, route to the individual detail view. There is also be a link to route back to the team view.
+ - SPA Route Navigation - when clicking on a pokemon in the list view, route to the individual detail view. There is also be a link to route back to the list view.
  - Consume a RESTful API - fetch up-to-date information on demand from the pokeAPI
  - User Interaction - allow users to filter pokemon by name in the list view by typing into a text input
  - Multiple Components - There are at minimum 2 components here:
